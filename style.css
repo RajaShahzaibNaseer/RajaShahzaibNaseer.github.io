@@ -1,0 +1,92 @@
+:root
+{
+    --bg-dark: hsl(0,0%,5%);
+    --bg: hsl(0,0%,10%);
+    --bg-light: hsl(0,0%,15%);
+    --text : hsl(0,0%,95%);
+    --muted-text: hsl(0,0%,70%);
+    font-size: 16px;
+}
+
+body
+{
+    background-color: var(--bg-dark);
+    color: var(--text);
+    font-size: 1rem;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--text);
+}
+
+nav
+{
+    background-color: var(--bg-light);
+    padding: 20px;
+}
+
+ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#home
+{
+    /* border: 10px solid white; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--bg);
+    padding: 20px;
+}
+
+.main-content
+{
+    /* border: 10px solid red; */
+    background-color: var(--bg-light);
+    padding: 10px;
+}
+
+.image-container
+{
+    /* border: 10px solid blue; */
+}
+
+#resume
+{
+    margin: 20px 0;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.card1
+{
+    border: 1px solid brown;
+    background-color: var(--bg);
+}
+
+
+.card2
+{
+    border: 1px solid brown;
+    background-color: var(--bg);
+
+}
+
+.card3
+{
+    border: 1px solid brown;
+    background-color: var(--bg);
+}
+
+#contact
+{
+    border: 1px solid white;
+    background-color: var(--bg-light);
+    padding: 20px;
+}
