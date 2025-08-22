@@ -37,7 +37,7 @@ ul
 #home
 {
     /* border: 10px solid white; */
-    margin-top: 50px;
+    margin: 50px 0;
     display: flex;
     justify-content: space-evenly;
     background-color: var(--bg);
@@ -49,6 +49,7 @@ ul
     /* border: 10px solid red; */
     background-color: var(--bg-light);
     padding: 10px;
+    max-width: 40vw;
 }
 
 .image-container
@@ -58,30 +59,38 @@ ul
 
 #resume
 {
-    margin: 20px 0;
+    margin-bottom: 40px;
     border: 1px solid white;
     display: flex;
-    justify-content: space-evenly
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--bg-dark);
 }
 
-.card1
+@media (max-width: 768px)
 {
-    border: 1px solid brown;
-    background-color: var(--bg);
+    #resume
+    {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
 }
 
-
-.card2
-{
+.card1,
+.card2,
+.card3 {
     border: 1px solid brown;
-    background-color: var(--bg);
-
+    background-color: var(--bg-light);
+    margin: 20px; 
 }
 
-.card3
-{
-    border: 1px solid brown;
-    background-color: var(--bg);
+@media (max-width: 768px) {
+    .card1,
+    .card2,
+    .card3 {
+        margin: 20px 0;
+    }
 }
 
 #contact
@@ -89,4 +98,12 @@ ul
     border: 1px solid white;
     background-color: var(--bg-light);
     padding: 20px;
+}
+
+.profile-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid grey;
 }
