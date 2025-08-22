@@ -54,7 +54,18 @@ ul
 
 .image-container
 {
-    /* border: 10px solid blue; */
+    border: 10px solid blue;
+    max-width: 50vw;
+    max-height: 80vh;
+    overflow: hidden;
+}
+
+.image-container img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 10% 10%;
 }
 
 #resume
