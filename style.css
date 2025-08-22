@@ -23,8 +23,11 @@ a
 
 nav
 {
-    background-color: var(--bg-light);
-    padding: 20px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(45px);
+    padding: 10px;
+    margin: 0;
 }
 
 ul
