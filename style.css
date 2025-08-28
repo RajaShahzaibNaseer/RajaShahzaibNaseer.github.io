@@ -6,6 +6,7 @@
     --text : hsl(0,0%,95%);
     --muted-text: hsl(0,0%,70%);
     font-size: 16px;
+    font-family: monospace;
 }
 
 body
@@ -57,7 +58,6 @@ ul
 
 .image-container
 {
-    border: 10px solid blue;
     max-width: 50vw;
     max-height: 80vh;
     overflow: hidden;
@@ -120,4 +120,23 @@ ul
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid grey;
+}
+
+.profile-image 
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img 
+{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: 20% 20%;
+    border-radius: 50%;
+    border: 2px solid var(--text);
 }
