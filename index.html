@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
+    <link rel="stylesheet" href="normalizecss.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <nav id="main-nav">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#resume">Resume</a></li>
@@ -40,22 +41,21 @@
                         <p>Software Developer</p>
                     </div>
                     <div class="contact-info">
-                        <p><img src="icons/mail.png" alt=""> Email</p>
-                        <p><img src="icons/phone.png" alt=""> Phone</p>
-                        <p><img src="icons/location.png" alt=""> Location</p>
+                        <p><img src="icons/mail.png" alt=""> shahzaib.naseer.work2@gmail.com</p>
+                        <p><img src="icons/phone.png" alt=""> +92 0335-5608961</p>
+                        <p><img src="icons/location.png" alt=""> Rawalpindi Pakistan</p>
                     </div>
                 </div>
             </div>
-            <div>
                 <div class="card2">
                     <h1>About me</h1>
-                    <p>
+                    <span class="muted line-height">
                         I am a highly motivated Computer Science graduate with a strong foundation in both theoretical
                         knowledge and practical applications. Proficient in multiple programming languages and adept at
                         troubleshooting software issues. Possess a demonstrated ability to adapt to new technologies and solve
                         complex problems efficiently. Experienced in both individual and team settings, with a focus on delivering
                         high-quality results.
-                    </p>
+                    </span>
                     <h1>education</h1>
                     <ol>
                         <li>
@@ -89,11 +89,12 @@
                         </li>
                     </ol>
                 </div>
-            </div>
-            <div>
                 <div class="card3">
                     <h1>Languages</h1>
-                    <p>ENGLISH: FLUENT (Certified by IELTS) • URDU (Fluent)</p>
+                    <ol>
+                        <li><p class="muted">ENGLISH: FLUENT (Certified by IELTS)</p></li>
+                        <li><p class="muted">URDU (Fluent)</p></li>
+                    </ol>
                     <h1>Soft skills</h1>
                     <ol>
                         <li><p class="muted">Teamwork and Collaboration</p></li>
@@ -111,12 +112,29 @@
                         <li><p class="muted"><strong>Data Management:</strong> Familiarity with database design, data pipeline development, and real-time data integration.</p></li>
                     </ol>
                     <h1>Relevent links</h1>
+                    <ol>
+                        <li><p class="muted"><strong>GitHub:</strong> <a href="https://github.com/RajaShahzaibNaseer">https://github.com/RajaShahzaibNaseer</a></p></li>
+                        <li><p class="muted"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shahzaib-naseer-work">https://www.linkedin.com/in/shahzaib-naseer-work</a></p></li>
                 </div>
-            </div>
         </section>
         <section id="contact">
             <p>there will be a form Here</p>
         </section>
-    </main>
+    </main>    
+    <script>
+    let lastScrollY = window.scrollY;
+    const nav = document.getElementById('main-nav');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > lastScrollY) {
+            // Scrolling down
+            nav.style.transform = 'translateY(-100%)';
+        } else {
+            // Scrolling up
+            nav.style.transform = 'translateY(0)';
+        }
+        lastScrollY = window.scrollY;
+    });
+    </script>
 </body>
 </html>

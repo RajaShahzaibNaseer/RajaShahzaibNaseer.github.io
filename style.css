@@ -29,6 +29,7 @@ nav
     backdrop-filter: blur(45px);
     padding: 10px;
     margin: 0;
+    transition: transform 0.3s ease;
 }
 
 ul
@@ -80,26 +81,27 @@ ol
 #resume
 {
     margin-bottom: 40px;
-    border: 1px solid white;
     display: flex;
-    column-gap: 20px;
-    justify-content: space-evenly;
-    background-color: var(--bg-dark);
+    column-gap: 50px;
+    padding: 50px;
+    justify-content: space-around;
+    background-color: var(--bg);
 }
 
 .card1,
 .card2,
 .card3 {
-    border: 1px solid brown;
     background-color: var(--bg-light);
-    margin: 0 auto; 
-    flex: 1;
+    box-sizing: border-box;
+    flex: 1 1 0;
     padding: 20px;
 }
 .card1
 {
+    height: 100%;
     text-align: center;
 }
+
 
 #contact
 {
@@ -140,6 +142,11 @@ ol
     color: var(--muted-text);
 }
 
+.line-height
+{
+    line-height: 1.5;
+}
+
 @media (max-width: 768px)
 {
     #resume
@@ -154,3 +161,4 @@ ol
         margin: 20px 0;
     }
 }
+
